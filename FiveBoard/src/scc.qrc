@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="bg">
+    <file>woods2.jpg</file>
+  </qresource>
+  <qresource prefix="chess">
+    <file>black.png</file>
+    <file>white.png</file>
+  </qresource>
+  <qresource prefix="icon">
+    <file>icon.jpg</file>
+  </qresource>
+</RCC>

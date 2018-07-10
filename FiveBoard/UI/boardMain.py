@@ -1,0 +1,155 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'boardMain.ui'
+#
+# Created by: PyQt5 UI code generator 5.10.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(905, 780)
+        MainWindow.setMinimumSize(QtCore.QSize(905, 780))
+        MainWindow.setMaximumSize(QtCore.QSize(905, 780))
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/icon/icon.jpg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        MainWindow.setWindowIcon(icon)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.turnLabel = QtWidgets.QLabel(self.centralwidget)
+        self.turnLabel.setGeometry(QtCore.QRect(775, 420, 110, 55))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(15)
+        font.setBold(True)
+        font.setWeight(75)
+        self.turnLabel.setFont(font)
+        self.turnLabel.setObjectName("turnLabel")
+        self.regretButton = QtWidgets.QPushButton(self.centralwidget)
+        self.regretButton.setGeometry(QtCore.QRect(775, 570, 105, 45))
+        font = QtGui.QFont()
+        font.setFamily("隶书")
+        font.setPointSize(15)
+        font.setBold(False)
+        font.setWeight(50)
+        self.regretButton.setFont(font)
+        self.regretButton.setStyleSheet("\n"
+"\n"
+"QPushButton#regretButton{background-color: qlineargradient(spread:reflect, x1:0, y1:1, x2:1, y2:1, stop:0 rgba(190, 167, 31, 77), stop:1 rgba(255, 255, 218, 89));}\n"
+"QPushButton#regretButton:hover\n"
+"{color: rgb(85, 255, 255);};\n"
+"")
+        self.regretButton.setObjectName("regretButton")
+        self.surrenderButton = QtWidgets.QPushButton(self.centralwidget)
+        self.surrenderButton.setGeometry(QtCore.QRect(775, 630, 105, 45))
+        font = QtGui.QFont()
+        font.setFamily("隶书")
+        font.setPointSize(15)
+        font.setBold(False)
+        font.setWeight(50)
+        self.surrenderButton.setFont(font)
+        self.surrenderButton.setStyleSheet("QPushButton#surrenderButton{background-color: qlineargradient(spread:reflect, x1:0, y1:1, x2:1, y2:1, stop:0 rgba(190, 167, 31, 77), stop:1 rgba(255, 255, 218, 89))}\n"
+"\n"
+"QPushButton#surrenderButton:hover\n"
+"{color: red;};")
+        self.surrenderButton.setObjectName("surrenderButton")
+        self.ExitButton = QtWidgets.QPushButton(self.centralwidget)
+        self.ExitButton.setGeometry(QtCore.QRect(775, 690, 105, 45))
+        font = QtGui.QFont()
+        font.setFamily("隶书")
+        font.setPointSize(15)
+        font.setBold(False)
+        font.setWeight(50)
+        self.ExitButton.setFont(font)
+        self.ExitButton.setStyleSheet("background-color: qlineargradient(spread:reflect, x1:0, y1:1, x2:1, y2:1, stop:0 rgba(190, 167, 31, 77), stop:1 rgba(255, 255, 218, 89));")
+        self.ExitButton.setObjectName("ExitButton")
+        self.authorInfoLabel = QtWidgets.QLabel(self.centralwidget)
+        self.authorInfoLabel.setGeometry(QtCore.QRect(670, 768, 250, 12))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        self.authorInfoLabel.setFont(font)
+        self.authorInfoLabel.setObjectName("authorInfoLabel")
+        self.stepsLabel = QtWidgets.QLabel(self.centralwidget)
+        self.stepsLabel.setGeometry(QtCore.QRect(775, 360, 100, 55))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(14)
+        font.setBold(True)
+        font.setWeight(75)
+        self.stepsLabel.setFont(font)
+        self.stepsLabel.setObjectName("stepsLabel")
+        self.backGroundView = QtWidgets.QGraphicsView(self.centralwidget)
+        self.backGroundView.setGeometry(QtCore.QRect(1, 1, 903, 779))
+        font = QtGui.QFont()
+        font.setFamily("Agency FB")
+        font.setPointSize(8)
+        self.backGroundView.setFont(font)
+        self.backGroundView.setStyleSheet("border-image: url(:/bg/woods2.jpg);")
+        self.backGroundView.setObjectName("backGroundView")
+        self.winnerLabel = QtWidgets.QLabel(self.centralwidget)
+        self.winnerLabel.setGeometry(QtCore.QRect(765, 180, 125, 90))
+        font = QtGui.QFont()
+        font.setFamily("楷体")
+        font.setPointSize(26)
+        font.setBold(True)
+        font.setWeight(75)
+        self.winnerLabel.setFont(font)
+        self.winnerLabel.setStyleSheet("color:rgb(255, 0, 0)")
+        self.winnerLabel.setText("")
+        self.winnerLabel.setAlignment(QtCore.Qt.AlignCenter)
+        self.winnerLabel.setIndent(-2)
+        self.winnerLabel.setObjectName("winnerLabel")
+        self.replayButton = QtWidgets.QPushButton(self.centralwidget)
+        self.replayButton.setGeometry(QtCore.QRect(775, 510, 105, 45))
+        font = QtGui.QFont()
+        font.setFamily("隶书")
+        font.setPointSize(15)
+        self.replayButton.setFont(font)
+        self.replayButton.setStyleSheet("QPushButton#replayButton\n"
+"{background-color: qlineargradient(spread:reflect, x1:0, y1:1, x2:1, y2:1, stop:0 rgba(190, 167, 31, 77), stop:1 rgba(255, 255, 218, 89));}\n"
+"QPushButton#replayButton:hover\n"
+"{color: rgb(0, 255, 127);}\n"
+"")
+        self.replayButton.setObjectName("replayButton")
+        self.countdownLabel = QtWidgets.QLabel(self.centralwidget)
+        self.countdownLabel.setGeometry(QtCore.QRect(785, 290, 80, 61))
+        font = QtGui.QFont()
+        font.setFamily("Lobster")
+        font.setPointSize(28)
+        font.setKerning(False)
+        self.countdownLabel.setFont(font)
+        self.countdownLabel.setStyleSheet("color: rgb(255, 0, 0);")
+        self.countdownLabel.setText("")
+        self.countdownLabel.setObjectName("countdownLabel")
+        self.backGroundView.raise_()
+        self.turnLabel.raise_()
+        self.regretButton.raise_()
+        self.surrenderButton.raise_()
+        self.ExitButton.raise_()
+        self.authorInfoLabel.raise_()
+        self.stepsLabel.raise_()
+        self.replayButton.raise_()
+        self.countdownLabel.raise_()
+        self.winnerLabel.raise_()
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.winnerLabel.setBuddy(self.ExitButton)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "五子棋"))
+        self.turnLabel.setText(_translate("MainWindow", "%s方回合"))
+        self.regretButton.setText(_translate("MainWindow", "悔棋"))
+        self.surrenderButton.setText(_translate("MainWindow", "认输"))
+        self.ExitButton.setText(_translate("MainWindow", "退出"))
+        self.ExitButton.setShortcut(_translate("MainWindow", "Esc"))
+        self.authorInfoLabel.setText(_translate("MainWindow", "@Author: David from WHU-CS 12™"))
+        self.stepsLabel.setText(_translate("MainWindow", "步数：0"))
+        self.replayButton.setText(_translate("MainWindow", "重开"))
+
+import src.scc_rc
