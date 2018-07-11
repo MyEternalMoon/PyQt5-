@@ -40,7 +40,7 @@ class board:
         for i in range(self._length):
             cur = None
             cnt = 0
-            for j in range(self._length-i):
+            for j in range(self._length):
                 if self._board[i][j] is not None:
                     if self._board[i][j] == cur:
                         cnt += 1
@@ -145,8 +145,7 @@ class board:
         若无则返回None，有则返回True白子，False黑子
         :return:
         '''
-        if self.steps < 8:
-            return None
+
         x = self.checkX()
         if x[0]:
             return x[1]

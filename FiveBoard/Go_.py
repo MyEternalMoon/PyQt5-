@@ -127,7 +127,7 @@ class MainWindow(QtWidgets.QMainWindow,Ui_MainWindow):
             else:
                 self.timeLimit = float('inf')
         else:
-            app.exec_()
+            exit(0)
 
         self.cnt = 0
         self.board = board(self.length+1)
